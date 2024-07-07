@@ -1,0 +1,19 @@
+version: '1'
+services:
+  post-serivce:
+    build:
+      context: ./cloudsek-posts-service
+      dockerfile: Dockerfile.posts
+    ports:
+      - "8001:8001"
+
+  comment-service:
+    build:
+      context: ./cloudsek-comments-service
+      dockerfile: Dockerfile.comments
+    ports:
+      - "8000:8000"
+
+networks:
+  elk:
+    driver: bridge

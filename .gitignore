@@ -1,0 +1,29 @@
+# Node.js dependency directory
+node_modules/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# TypeScript compiled output
+dist/
+build/
+
+# Environment variables file
+.env
+
+# IDE and editor settings
+.vscode/
+.idea/
+
+# TypeScript definition files
+*.d.ts
+
+# Coverage directory used by testing tools
+coverage/
+
+# Optional npm cache directory
+.npm

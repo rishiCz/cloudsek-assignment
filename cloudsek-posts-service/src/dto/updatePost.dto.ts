@@ -1,0 +1,40 @@
+import {IsEmpty, IsNotEmpty, IsString } from "class-validator";
+
+export class UpdatePostDTO {
+
+  @IsNotEmpty()
+  @IsString()
+  readonly image: string;
+
+  @IsNotEmpty()
+  @IsString()
+  readonly title: string;
+
+  @IsEmpty()
+  readonly author: string;
+
+  @IsEmpty()
+  readonly isDeleted: Boolean;
+
+  @IsEmpty()
+  readonly createdAt: Date;
+ 
+  @IsEmpty()
+  readonly updatedAt: Date;
+
+  constructor(
+    image: any,
+    title: any,
+    author: any,
+    isDeleted: any,
+    createdAt: any,
+    updatedAt: any
+  ) {
+    this.image = image;
+    this.title = title;
+    this.author = author;
+    this.isDeleted = isDeleted;
+    this.createdAt = createdAt;
+    this.updatedAt = updatedAt;
+  }
+}
