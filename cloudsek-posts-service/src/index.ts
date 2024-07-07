@@ -22,12 +22,3 @@ app.use(routes);
 app.listen(8001, () => {
   logger.info("Post Service started on port 8001 🚀");
 });
-
-// Log any unhandled errors
-process.on('unhandledRejection', (reason, promise) => {
-  logger.error('Unhandled Rejection at:', promise, 'reason:', reason);
-});
-
-process.on('uncaughtException', (error) => {
-  logger.error('Uncaught Exception:', error);
-});
