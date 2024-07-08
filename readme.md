@@ -11,14 +11,35 @@
 - docker
 - npm
   
-To get started with the installation
+# Getting Started
+
+## Installation
+
 1. Clone the repository
-2. Set up envrionment variables (.env file) in both comment's and post service's root folders
-3. Navigate to root and run the following cmd
+
+2. Set up environment variables (.env file) in both comment's and post service's root folders:
+
+   - For the comments service:
+     ```
+     # ./cloudsek-comments-service/.env
+     MONGO_URL=your_mongo_db_connection_url
+     POST_SERVICE_URL=http://localhost:8001/post
+     ```
+
+   - For the posts service:
+     ```
+     # ./cloudsek-posts-service/.env
+     MONGO_URL=your_mongo_db_connection_url
+     COMMENT_SERVICE_URL=http://localhost:8000
+     ```
+
+3. Navigate to the root directory and run the following command:
 ```
 docker-compose up --build
 ```
-**Note:  Make sure docker is running**
+> Note:  Make sure docker is running
+
+> Note: Replace `your_mongo_db_connection_url` with your actual MongoDB connection URL.
 
 ## Overview
 This project comprises of two services post-service and comment-service which interact with each other for extensible functionalities.
