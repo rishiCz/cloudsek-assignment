@@ -26,7 +26,7 @@ This project comprises of two services post-service and comment-service which in
 ![Frame 1](https://github.com/rishiCz/cloudsek-assignment/assets/98217604/ce77c10e-8d93-4f8e-b8ce-c679fd7207e1)
 ### Functionalities
 
- - **Implemented rich text support by creating a html validator for post text contenet.** (The input for the text would be a html string consisting of <p/<b,<a and<i HTML tags for normal, bold, link and italics tags respectively)
+ - **Implemented rich text support by creating a html validator for comment.** (The input for the text would be a html string consisting of <p/<b,<a and<i HTML tags for normal, bold, link and italics tags respectively)
  - Implemented validations for request body using class-validators and DTO's.
  - Implemented logs for better debugging.
  - Implemented containers for each service
