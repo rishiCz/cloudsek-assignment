@@ -8,9 +8,10 @@
 5. Docker
 ## Installation
 ### Prerequisites
-1- docker
-2- npm
-To get started with installation
+- docker
+- npm
+  
+To get started with the installation
 1. Clone the repository
 2. Set up envrionment variables (.env file) in both comment's and post service's root folders
 3. Navigate to root and run the following cmd
@@ -40,4 +41,6 @@ The comment service handles all the operations related to comments
  - User can get or delete all comments in a post
  
 ## Architecture
+![Frame 1](https://github.com/rishiCz/cloudsek-assignment/assets/98217604/ce77c10e-8d93-4f8e-b8ce-c679fd7207e1)
+
 
