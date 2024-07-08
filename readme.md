@@ -68,7 +68,7 @@ The post service handles all the operations related to a post.
 
 ### Comment-service
 The comment service handles all the operations related to comments
- - User can perform CRUD operations on the post.
+ - User can perform CRUD operations on the comment.
  - Each comment consists of a postId in it
  - User can get or delete all comments in a post
 
