@@ -1,9 +1,12 @@
 import { IsEmpty, IsNotEmpty, IsString } from "class-validator";
+import { IsValidHTML } from "../validator/html-validator";
 
 export class UpdateCommentDTO {
   @IsEmpty()
   readonly postId: string;
 
+  // We are using a custom HTML validator to validate HTML input for rich text.
+  @IsValidHTML()
   @IsNotEmpty()
   @IsString()
   readonly text: string;

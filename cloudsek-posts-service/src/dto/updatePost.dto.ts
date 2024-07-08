@@ -1,7 +1,9 @@
 import {IsEmpty, IsNotEmpty, IsString } from "class-validator";
+import { IsUrlFormat } from "../validator/url-validator";
 
 export class UpdatePostDTO {
 
+  @IsUrlFormat()
   @IsNotEmpty()
   @IsString()
   readonly image: string;
