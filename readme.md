@@ -36,11 +36,30 @@ The post service handles all the operations related to a post.
  - User can perform CRUD operations on the post.
  - A post can have multiple comments linked to it.
  - When a post gets deleted all the comments of that also get deleted.
+
+#### Endpoints
+
+- **GET**: `/post` - Gets all posts.
+- **POST**: `/post` - Creates a new post.
+- **GET**: `/post/:postId` - Gets a specific post by its ID.
+- **DELETE**: `/post/:postId` - Deletes a specific post by its ID.
+- **PATCH**: `/post/:postId` - Updates a specific post by its ID.
+
 ### Comment-service
 The comment service handles all the operations related to comments
  - User can perform CRUD operations on the post.
  - Each comment consists of a postId in it
  - User can get or delete all comments in a post
+
+#### Endpoints
+
+- **GET**: `/comment` - Gets all comments.
+- **POST**: `/comment` - Creates a new comment.
+- **GET**: `/comment/:commentId` - Gets a specific comment by its ID.
+- **DELETE**: `/comment/:commentId` - Deletes a specific comment by its ID.
+- **PATCH**: `/comment/:commentId` - Updates a specific comment by its ID.
+- **GET**: `/postcomments/:postId` - Gets all comments for a specific post by the post's ID.
+- **DELETE**: `/postcomments/:postId` - Deletes all comments for a specific post by the post's ID.
  
 
 
